@@ -18,6 +18,7 @@ export class DateCalculatorFormComponent  {
   duration =  null;
   endDateIncluded = false;
   displayResult = false;
+  durationSuffix = 'days';
 
 
   onSubmit() {  
@@ -32,6 +33,7 @@ export class DateCalculatorFormComponent  {
     if(this.endDateIncluded){
       this.duration += 1;
     }
+    this.durationSuffix = this.duration === 1 ? 'day' : 'days';
     this.displayResult = true;
   }
   
