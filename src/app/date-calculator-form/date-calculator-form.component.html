@@ -27,6 +27,6 @@
 </form>
 
 <div [hidden]="!displayResult" class="result row">
-  <h2>Result: {{duration}} days</h2>
-  <p>It is {{duration}} day(s) from the start date to the end date.</p>
+  <h2>Result: {{duration}} {{durationSuffix}}</h2>
+  <p>It is {{duration}} {{durationSuffix}} from the start date to the end date.</p>
 </div>
